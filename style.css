@@ -152,9 +152,8 @@ footer {
 
 .memory-card img {
     width: 100%;
-    height: auto;
+    height: 960px;
     max-width: 300px;
-    max-height: 300px;
     object-fit: contain;
     border-radius: 10px;
     margin-bottom: 0.5rem;
@@ -230,7 +229,7 @@ footer {
     .memory-card img {
         max-width: 100%;
         max-height: 300px;
-        height: 960px;
+        height: auto;
     }
 
 }
