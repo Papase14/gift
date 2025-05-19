@@ -9,6 +9,9 @@
     --font-main: 'Montserrat', sans-serif;
     --font-heading: 'Lora', serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -25,12 +28,19 @@ body {
 }
 
 header {
-    background: var(--accent-color);
-    padding: 1.5rem;
+    background: rgba(46, 125, 50, 0.95); /* semi-transparent green */
+    padding: 1rem 0;
     text-align: center;
     color: white;
-    animation: fadeInDown 1s ease-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Optional: subtle blur effect */
+    transition: background 0.3s ease;
 }
+
+
+
 
 nav ul {
     list-style: none;
@@ -55,6 +65,7 @@ main {
 }
 
 section {
+    scroll-margin-top: 100px;
     margin-bottom: 3rem;
     opacity: 0;
     transform: translateY(30px);
