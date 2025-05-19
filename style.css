@@ -228,6 +228,8 @@ footer {
 
     .memory-card img {
         max-width: 100%;
+        max-height: 300px;
+        height: auto;
     }
 
 }
@@ -238,6 +240,6 @@ footer {
     }
 
     .memory-card img {
-        max-height: 400px;
+        max-height: 960px;
     }
 }
